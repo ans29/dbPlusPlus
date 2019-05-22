@@ -1,14 +1,12 @@
-# CPP based database
+# CPP based database<br>
+DATABASE BASICS :  <br>
+	records of same types, are saved in a single table.<br>
+	there can be multiple different tables in a single database.<br>
+	Information about each of these tables are stored in another table of the database, called metadata table.<br>
 
 
-DATABASE BASICS : 
-	records of same types, are saved in a single table.
-	there can be multiple different tables in a single database.
-	Information about each of these tables are stored in another table of the database, called metadata table.
-
-
-This project simulates the database by saving the information by creating the following analogy :
-	objects	= single record
-	class	= metadata record
-	database= folder
-	table	= file
+This project simulates the database by saving the information by creating the following analogy :<br>
+	objects	= single record<br>
+	class	= metadata record<br>
+	database= folder<br>
+	table	= file<br>
