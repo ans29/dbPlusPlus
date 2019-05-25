@@ -14,24 +14,25 @@ int main()
 //	getMetadata();
 
 	string cmd, tbl;
+	cout << "\t\t\t DB++\n\t\t\t======\n\n\tpress 'h' for help";
 	do
 	{
-		cout << "ENTER COMMAND (\'h\' for help) : ";
+		cout << "\n===========================================================\n\t\tENTER COMMAND : ";
 		cin >> cmd;
 		
 		if (cmd[0] == 'h')
 		{
 			cout << "\n\t\t HELP :\n\t TABLES : mobile, tablet, laptop";
-			cout << "\n\t OPERATIONS : Add, view, del, exit, meta";
+			cout << "\n\t COMMANDS : Add, view, del, exit, meta";
 			cout << "\n\t eg1: ADD MOBLIE";
 			cout << "\n\t eg2: VIEW TABLET";
-			cout << "\n\t eg3: DEL row 3 from LAPTOP\n";
+			cout << "\n\t eg3: DEL row 3 from LAPTOP";
 			continue;
 		}
 	
 		if (cmd.compare ("add") == 0)
 		{
-			cout << "\t\t ENTER TABLE : ";
+			cout << "\t\t  ENTER TABLE : ";
 			cin >> tbl;
 			if (tbl[0] == 'M' || tbl[0] == 'm')		MobilePhone();
 			if (tbl[0] == 'T' || tbl[0] == 't')		Tablet();
@@ -57,9 +58,7 @@ int main()
 
 		if (cmd.compare ("meta") == 0) 
 		{
-			cout << "\t\t ENTER TABLE : ";
-			cin >> tbl;
-		
+			getMetadata(true);
 		}
 
 	}while (cmd.compare ("exit") != 0);

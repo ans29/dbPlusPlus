@@ -28,9 +28,9 @@ class BasicEelectronics
 	string basicToString()
 	{
 		string s = to_string (screen_size);
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (to_string (price));
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (to_string (battery));
 		return s;
 	}
@@ -58,7 +58,7 @@ class MobilePhone : public BasicEelectronics
 	string toString()
 	{
 		string s = basicToString();
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (to_string (camera_resolution));
 		return s;
 	}
@@ -84,9 +84,9 @@ class Tablet : public MobilePhone
 	string toString()
 	{
 		string s = basicToString();
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (to_string (camera_resolution));
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (processor);
 		return s;
 	}
@@ -114,9 +114,9 @@ class Laptop : public BasicEelectronics
 	string toString()
 	{
 		string s = basicToString();
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (processor);
-		s = s.append (":");
+		s = s.append ("\t|");
 		s = s.append (graphic_card);	
 		return s;
 	}
