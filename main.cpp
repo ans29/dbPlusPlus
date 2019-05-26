@@ -22,8 +22,8 @@ int main()
 		
 		if (cmd[0] == 'h')
 		{
-			cout << "\n\t\t HELP :\n\t TABLES : mobile, tablet, laptop";
-			cout << "\n\t COMMANDS : Add, view, del, exit, meta";
+			cout << "\n\t\t HELP :\n\t TABLES : Mobile, Tablet, Laptop";
+			cout << "\n\t COMMANDS : add, view, del, exit, meta";
 			cout << "\n\t eg1: ADD MOBLIE";
 			cout << "\n\t eg2: VIEW TABLET";
 			cout << "\n\t eg3: DEL row 3 from LAPTOP";
@@ -53,6 +53,8 @@ int main()
 			cin >> tbl;
 			tbl.append (".txt");
 			int row;
+			cout << "\t\t ENTER ROW NO: ";
+			cin >> row;
 			del (tbl, row);
 		}
 

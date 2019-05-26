@@ -47,12 +47,8 @@ class MobilePhone : public BasicEelectronics
 	{
 		cout << "\t camera resolution : ";
 		cin >> camera_resolution;
-
 		string line = toString();
-		if (add (line, "Mobile.txt"))
-			cout << "\n\t\t DATA SAVED SUCCESSFULLY.\n";
-		else
-			cout << "\n\t\t ERROR IN SAVING DATA";
+		add (line, "Mobile.txt");
 	}
 
 	string toString()
@@ -73,12 +69,8 @@ class Tablet : public MobilePhone
 	{
 		cout << "\t processor : ";
 		cin >> processor;
-
 		string line = toString();
-		if (add (line, "Tablet.txt"))
-			cout << "\n\t\t DATA SAVED SUCCESSFULLY.\n";
-		else
-			cout << "\n\t\t ERROR IN SAVING DATA";
+		add (line, "Tablet.txt");
 	}
 
 	string toString()
@@ -105,10 +97,7 @@ class Laptop : public BasicEelectronics
 		cin >> graphic_card;
 
 		string line = toString();
-		if (add (line, "Laptop.txt"))
-			cout << "\n\t\t DATA SAVED SUCCESSFULLY.\n";
-		else
-			cout << "\n\t\t ERROR IN SAVING DATA";
+		add (line, "Laptop.txt");
 	}
 
 	string toString()
